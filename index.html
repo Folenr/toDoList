@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>To Do List</title>
-    </head>
-    <body>
-        <h1>To Do List</h1>
-        <input type="text" id="input">
-        <button onclick="Submit()">Submit</button>
-        <script src="script.js"></script>
-    </body>
+
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="list" id="toDo">
+            <h2>to do</h2>
+            <div class="task">
+            <p>This is also your task</p>
+            <label class="select">
+                <select onchange="changeList(this)">
+                    <option value="toDo">to do</option>
+                    <option value="doing">doing</option>
+                    <option value="done">done</option>
+                </select>
+            </label>
+            </div>
+            <button id="addTask" onclick="createTask()">add new Task</button>
+        </div>
+
+        <div class="list" id="doing">
+            <h2>doing</h2>
+        </div>
+
+        <div class="list" id="done">
+            <h2>done</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
