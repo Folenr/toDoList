@@ -3,32 +3,54 @@
 
 <head>
     <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="main">
         <div class="list" id="toDo">
-            <h2>to do</h2>
+            
+            <h2>To Do</h2>
+
             <div class="task">
-            <p>This is also your task</p>
-            <label class="select">
-                <select onchange="changeList(this)">
-                    <option value="toDo">to do</option>
-                    <option value="doing">doing</option>
-                    <option value="done">done</option>
-                </select>
-            </label>
+                <p>This is your first task</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                        <option value="delete">delete</option>
+                    </select>
+                </label>
             </div>
-            <button id="addTask" onclick="createTask()">add new Task</button>
+
+            <div class="task">
+                <p>your task is here just like the others</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                        <option value="delete">delete</option>
+                    </select>
+                </label>
+            </div>
+
+                <button id="addTask" onclick="createTask()">+</button>
+
         </div>
 
         <div class="list" id="doing">
-            <h2>doing</h2>
+            <h2>Doing</h2>
         </div>
 
         <div class="list" id="done">
-            <h2>done</h2>
+            <h2>Done</h2>
         </div>
     </div>
     <script src="script.js"></script>
