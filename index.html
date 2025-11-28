@@ -14,31 +14,72 @@
 <body>
     <div class="main">
         <div class="list" id="toDo">
-            
             <h2>To Do</h2>
+            <div class="hiddenHead"></div>
 
             <div class="task">
-                <p>This is your first task</p>
+                <p>Fix add Button and maybe enhance it or change i don't care</p>
                 <label class="select">
                     <select onchange="changeList(this)">
                         <option value="toDo">to do</option>
                         <option value="doing">doing</option>
                         <option value="done">done</option>
-                        <option value="delete">delete</option>
                     </select>
                 </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
             </div>
 
             <div class="task">
-                <p>your task is here just like the others</p>
+                <p>add buttons instead of select or keep it</p>
                 <label class="select">
                     <select onchange="changeList(this)">
                         <option value="toDo">to do</option>
                         <option value="doing">doing</option>
                         <option value="done">done</option>
-                        <option value="delete">delete</option>
                     </select>
                 </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+            <div class="task">
+                <p>better colors (maybe multiple themes)</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+             <div class="task">
+                <p>add a priority system</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+            <div class="task">
+                <p>if you still have time somehow make it phone friendly </p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
             </div>
 
                 <button id="addTask" onclick="createTask()">+</button>
@@ -47,10 +88,66 @@
 
         <div class="list" id="doing">
             <h2>Doing</h2>
+            <div class="hiddenHead"></div>
+            
         </div>
 
         <div class="list" id="done">
             <h2>Done</h2>
+            <div class="hiddenHead"></div>
+
+            <div class="task">
+                <p>basic to do list</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+            <div class="task">
+                <p>scroll for more tasks</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+            <div class="task">
+                <p>make it bigger</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
+            <div class="task">
+                <p>edit button</p>
+                <label class="select">
+                    <select onchange="changeList(this)">
+                        <option value="toDo">to do</option>
+                        <option value="doing">doing</option>
+                        <option value="done">done</option>
+                    </select>
+                </label>
+                <button class="taskButton" onclick="deleteTask(this)">D</button>
+                <button class="taskButton" onclick="editTask(this)">E</button>
+            </div>
+
         </div>
     </div>
     <script src="script.js"></script>
