@@ -26,7 +26,7 @@ body{
   overflow-y:auto;
 }
 .list::-webkit-scrollbar {
-  display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+  display: none;
 }
 
 h2 {
@@ -82,12 +82,30 @@ input {
   font-size: 16px;
   max-width: 180px;
 }
-textarea{
+textarea {
   font-family: "Playpen Sans Thai", cursive;
   overflow:hidden;
   min-height: 25px;
   width: 270px;
   font-size: 20px;
+}
+
+.taskButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+}
+.submitButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+}
+
+.buttonIcon {
+  width: 25px; 
+  height: 25px;
 }
 
 #addTask{

@@ -6,9 +6,10 @@ function createTask(){
     const button = document.createElement('button');
 
     input.onkeyup = function() {textAreaAdjust(input);};
-    button.innerText = 'S';
-    button.onclick = function(){Submit(input,button);};
+    button.innerHTML = '<img src="check.png" alt="Submit" class="buttonIcon">';
+    button.onclick = function(){submit(input,button);};
     div.className = 'task';
+    button.className = 'taskButton';
 
     toDo.appendChild(div);
     div.appendChild(input);
@@ -16,7 +17,7 @@ function createTask(){
     toDo.appendChild(addButton);
 }
 
-function Submit(input,button){
+function submit(input,button){
     const p = document.createElement('p');
     const label = document.createElement('label');
     const select = document.createElement('select');
@@ -34,11 +35,11 @@ function Submit(input,button){
     op3.innerText = 'done';
     
     deleteButton.onclick = function() {deleteTask(deleteButton);};
-    deleteButton.innerText = 'D';
+    deleteButton.innerHTML = '<img src="bin.png" alt="delete" class="buttonIcon">';
     deleteButton.className = 'taskButton';
 
     editButton.onclick = function() {editTask(editButton);};
-    editButton.innerText = 'E';
+    editButton.innerHTML = '<img src="pen.png" alt="edit" class="buttonIcon">';
     editButton.className = 'taskButton';
 
     select.onchange = function() {changeList(select);};
@@ -81,8 +82,9 @@ function editTask(button){
     const input = document.createElement('textarea');
     const submitButton = document.createElement('button');
     
-    submitButton.innerText = 'S';
-    submitButton.onclick = function(){Submit(input,submitButton);};
+    submitButton.innerHTML = '<img src="check.png" alt="Submit" class="buttonIcon">';
+    submitButton.className = 'submitButton';
+    submitButton.onclick = function(){submit(input,submitButton);};
     input.value = div.querySelector('p').innerText;
     input.onkeyup = function() {textAreaAdjust(input);};
     div.appendChild(input);
