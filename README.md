@@ -1,2 +1,4 @@
 # toDoList
-basic to do list in the web
+Basic to-do list on the web.
+Sorry for any incomplete features since I didn't have enough time.
+I will try to improve it as a personal project.
