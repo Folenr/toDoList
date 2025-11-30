@@ -61,7 +61,7 @@ p {
   margin-top: 20px;
   
 }
-.task button{
+.task .taskButton{
   visibility: hidden;
 }
 .task .select{
@@ -73,7 +73,7 @@ p {
 .task:hover .select{
   visibility: visible;
 }
-.task:hover button{
+.task:hover .taskButton{
   visibility: visible;
 }
 

@@ -6,10 +6,10 @@ function createTask(){
     const button = document.createElement('button');
 
     input.onkeyup = function() {textAreaAdjust(input);};
-    button.innerHTML = '<img src="check.png" alt="Submit" class="buttonIcon">';
     button.onclick = function(){submit(input,button);};
+    button.innerHTML = '<img src="check.png" alt="Submit" class="buttonIcon">';
     div.className = 'task';
-    button.className = 'taskButton';
+    button.className = 'submitButton';
 
     toDo.appendChild(div);
     div.appendChild(input);
